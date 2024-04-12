@@ -10,12 +10,8 @@
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Введiть друге число: ");
             int num2 = int.Parse(Console.ReadLine());
-            Console.Write($"Середне арифметичне: {(num1 + num2) / 2}");
-            //Console.Write($"Середне арифметичне: {mid(num1,num2)}");
+            double res = ((num1 + num2) / 2.0);
+            Console.Write($"Середне арифметичне: {(int)Math.Ceiling(res)}");
         }
-        //static int mid(int num1,int num2)
-        //{
-        //    return (num1 + num2) / 2 ;
-        //}
     }
 }
