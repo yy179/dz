@@ -1,4 +1,6 @@
-﻿namespace dz_10_1
+﻿using System;
+
+namespace dz_10_1
 {
     internal class Program
     {
@@ -18,7 +20,6 @@
                 Console.WriteLine("Wanna change name? Y/N");
                 answer = Console.ReadLine().ToLower();
             }
-
             Person person2 = new Person("Vlad", 18);
             person2.PrintDetails();
 

@@ -17,7 +17,7 @@ namespace dz_10_1
             this.age = age;
             this.sex = sex;
         }
-        public Person(string name) : this(name, 0, "Not indicated") {}
+        public Person(string name) : this(name, 0, "Not indicated") { }
         public int Ages
         {
             get { return age; }
@@ -28,13 +28,13 @@ namespace dz_10_1
             get { return name; }
             set { name = value; }
         }
-        public Person(string name, int age) : this (name, age, "Not indicated"){}
+        public Person(string name, int age) : this(name, age, "Not indicated") { }
         public void PrintDetails() { Console.WriteLine($"Name: {name}\nAge: {age}\nSex: {sex}\nIsAdult: {isAdult()}\n"); }
         public bool isAdult()
         {
             return age >= 18;
         }
-        private string ChangeName(string name) 
+        private string ChangeName(string name)
         {
             Console.WriteLine("New name: ");
             this.name = Console.ReadLine();
